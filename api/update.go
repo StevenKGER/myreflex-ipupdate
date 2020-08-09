@@ -20,8 +20,6 @@ type WhitelistUpdateResult struct {
 func UpdateWhitelist(data *WhitelistUpdateData) *WhitelistUpdateResult {
 	updateData, _ := json.Marshal(data)
 
-	println(string(updateData))
-
 	response := patch(whitelistPatchUrl, updateData)
 
 	defer response.Body.Close()

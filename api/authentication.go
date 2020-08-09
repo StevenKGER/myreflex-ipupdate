@@ -24,8 +24,6 @@ type LoginResult struct {
 func Login(data *LoginData) (result *LoginResult) {
 	loginJson, _ := json.Marshal(data)
 
-	println(string(loginJson))
-
 	response := post(loginUrl, loginJson)
 
 	defer response.Body.Close()
