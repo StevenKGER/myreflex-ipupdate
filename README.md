@@ -3,6 +3,10 @@
 This tool provides an automatic whitelist update, if the server's IP address is changing (e.g. in case, where a server is hosted at home).
 
 ## How to use
+Compile it yourself with ``go build`` or use the pre-compiled binaries available in the Releases tab.
+
+Program usage:
+
 ``
 ./myreflex-ipupdate -username yourSpigotMCUsername -password yourMyReflexAPIPassword
 ``
